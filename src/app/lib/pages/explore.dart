@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class Explore extends StatefulWidget {
+  const Explore({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Explore> createState() => _ExploreState();
 }
 
-class _HomeState extends State<Home> {
+class _ExploreState extends State<Explore> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Home",
+          "Explore",
           style: TextStyle(
               fontWeight: FontWeight.bold, color: Colors.black, fontSize: 35.0),
         ),
