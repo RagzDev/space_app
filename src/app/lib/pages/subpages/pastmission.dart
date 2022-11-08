@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ImagesGrid extends StatefulWidget {
-  const ImagesGrid({super.key});
+class PastMissions extends StatefulWidget {
+  const PastMissions({super.key});
 
   @override
-  State<ImagesGrid> createState() => _ImagesGridState();
+  State<PastMissions> createState() => _PastMissionsState();
 }
 
-class _ImagesGridState extends State<ImagesGrid> {
+class _PastMissionsState extends State<PastMissions> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

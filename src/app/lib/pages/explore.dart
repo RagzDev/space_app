@@ -1,3 +1,9 @@
+import 'package:app/pages/subpages/agencies.dart';
+import 'package:app/pages/subpages/ar.dart';
+import 'package:app/pages/subpages/currentppl.dart';
+import 'package:app/pages/subpages/marsweather.dart';
+import 'package:app/pages/subpages/pastmission.dart';
+import 'package:app/pages/subpages/solarsys.dart';
 import 'package:flutter/material.dart';
 
 class Explore extends StatefulWidget {
@@ -29,35 +35,92 @@ class _ExploreState extends State<Explore> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 12, 12, 12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    width: 120,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Agencies()),
+                      );
+                    },
+                    child: Container(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Space Agencies",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      width: 120,
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 12, 12, 12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    width: 120,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SolarSystem()),
+                      );
+                    },
+                    child: Container(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Our Solar System",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      width: 120,
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 12, 12, 12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    width: 120,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PastMissions()),
+                      );
+                    },
+                    child: Container(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Past Missions",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      width: 120,
+                    ),
                   ),
                 ),
               ],
@@ -69,35 +132,91 @@ class _ExploreState extends State<Explore> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 12, 12, 12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    width: 120,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const AR()),
+                      );
+                    },
+                    child: Container(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "AR Models",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      width: 120,
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 12, 12, 12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    width: 120,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const MarsWeather()),
+                      );
+                    },
+                    child: Container(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Mars Weather",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      width: 120,
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 12, 12, 12),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    width: 120,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Astronauts()),
+                      );
+                    },
+                    child: Container(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Who's in Space?",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      width: 120,
+                    ),
                   ),
                 ),
               ],

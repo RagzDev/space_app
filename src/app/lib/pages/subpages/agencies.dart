@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ImagesGrid extends StatefulWidget {
-  const ImagesGrid({super.key});
+class Agencies extends StatefulWidget {
+  const Agencies({super.key});
 
   @override
-  State<ImagesGrid> createState() => _ImagesGridState();
+  State<Agencies> createState() => _AgenciesState();
 }
 
-class _ImagesGridState extends State<ImagesGrid> {
+class _AgenciesState extends State<Agencies> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +15,10 @@ class _ImagesGridState extends State<ImagesGrid> {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ),
           onPressed: () {
             Navigator.pop(context);
           },

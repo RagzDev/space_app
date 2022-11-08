@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ImagesGrid extends StatefulWidget {
-  const ImagesGrid({super.key});
+class SolarSystem extends StatefulWidget {
+  const SolarSystem({super.key});
 
   @override
-  State<ImagesGrid> createState() => _ImagesGridState();
+  State<SolarSystem> createState() => _SolarSystemState();
 }
 
-class _ImagesGridState extends State<ImagesGrid> {
+class _SolarSystemState extends State<SolarSystem> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

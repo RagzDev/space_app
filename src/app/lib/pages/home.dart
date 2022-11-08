@@ -1,5 +1,9 @@
 import 'dart:io';
 
+import 'package:app/pages/subpages/ar.dart';
+import 'package:app/pages/subpages/images.dart';
+import 'package:app/pages/subpages/pastmission.dart';
+import 'package:app/pages/subpages/videos.dart';
 import 'package:app/utils/picapi.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -163,44 +167,61 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.fromLTRB(12.0, 12, 12, 0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          "Learn",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                    width: 190,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PastMissions()),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Missions",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      width: 190,
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(12.0, 12, 12, 0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          "AR",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                    width: 190,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const AR()),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "AR",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      width: 190,
+                    ),
                   ),
                 ),
               ],
@@ -212,44 +233,62 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.fromLTRB(12.0, 12, 12, 0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          "Images",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                    width: 190,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ImagesGrid()),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Images",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      width: 190,
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(12.0, 12, 12, 0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cat2.png"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          "Videos",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                    width: 190,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const VideoGrid()),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/cat2.png"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Videos",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      width: 190,
+                    ),
                   ),
                 ),
               ],
